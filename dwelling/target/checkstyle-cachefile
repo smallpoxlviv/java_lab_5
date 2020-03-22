@@ -1,0 +1,6 @@
+#Sun Mar 22 19:39:24 EET 2020
+configuration*?=FC2A68A367ECC060420F4CFFB1321EB60E30874E
+module-resource*?\:checkstyle-xpath-suppressions.xml=99D3AF30CB9F5DB8F914A170226EEB18E707B2E6
+module-resource*?\:checkstyle-suppressions.xml=F188DE875AFA3D0F428AACBBDEB08C4ACF964642
+D\:\\pr\\third_lab\\dwelling\\src\\main\\java\\ua\\lviv\\iot\\dwelling\\model\\SoundInsulationOfWalls.java=1584381922483
+D\:\\pr\\third_lab\\dwelling\\src\\main\\java\\ua\\lviv\\iot\\dwelling\\model\\SortType.java=1584382160382
