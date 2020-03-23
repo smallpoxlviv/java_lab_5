@@ -8,10 +8,6 @@ public class Flat extends AbstractDwellingInHouse {
         super(areaInSquareMeters, priceInUSD, location, district, balconyCount);
     }
 
-  /*  public String getHeaders() {
-        return super.getHeaders() + ", " + "neighboringApartmentsOnFloorCount";
-    }*/
-
     public String toCSV() {
         return super.toCSV() + ";" + getNeighboringApartmentsOnFloorCount();
     }
