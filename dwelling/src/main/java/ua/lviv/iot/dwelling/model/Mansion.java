@@ -10,12 +10,12 @@ public class Mansion extends AbstractDwelling {
         super(areaInSquareMeters, priceInUSD, location, district, balconyCount);
     }
 
-    public String getHeaders() {
+  /*  public String getHeaders() {
         return super.getHeaders() + ", " + "areaOfLandInSquareMeters, entranceDoorCount, otherBuildingsInArea";
-    }
+    }*/
 
     public String toCSV() {
-        return super.toCSV() + ", " + getAreaOfLandInSquareMeters() + ", " + getEntranceDoorCount() + ", "
+        return super.toCSV() + ";;;" + getAreaOfLandInSquareMeters() + ";" + getEntranceDoorCount() + ";"
                 + isOtherBuildingsInArea();
     }
 

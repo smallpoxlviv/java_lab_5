@@ -14,9 +14,9 @@ public class DwellingWriter {
     }
 
     public void writeToFile(List<AbstractDwelling> dwellings) throws IOException {
+        csvWriter.write(dwellings.get(0).getHeaders());
+        csvWriter.write("\r\n");
         for (AbstractDwelling dwelling : dwellings) {
-            csvWriter.write(dwelling.getHeaders());
-            csvWriter.write(", ");
             csvWriter.write(dwelling.toCSV());
             csvWriter.write("\r\n");
             csvWriter.flush();

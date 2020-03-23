@@ -26,9 +26,8 @@ public class DwellingManagerUtils {
                 double priceComparisonResult = firstDwelling.getPriceInUSD() - secondDwelling.getPriceInUSD();
                 if (priceComparisonResult != 0) {
                     return (int) priceComparisonResult;
-                } else {
-                    return (int) (firstDwelling.getAreaInSquareMeters() - secondDwelling.getAreaInSquareMeters());
                 }
+                return (int) (firstDwelling.getAreaInSquareMeters() - secondDwelling.getAreaInSquareMeters());
             }
         };
         dwellings.sort(sortType == SortType.ASC ? comparator : comparator.reversed());

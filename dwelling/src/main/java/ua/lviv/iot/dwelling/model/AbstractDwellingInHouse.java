@@ -9,12 +9,12 @@ public abstract class AbstractDwellingInHouse extends AbstractDwelling {
         super(areaInSquareMeters, priceInUSD, location, district, balconyCount);
     }
 
-    public String getHeaders() {
+   /* public String getHeaders() {
         return super.getHeaders() + ", " + "numberOfFloor";
-    }
+    }*/
 
     public String toCSV() {
-        return super.toCSV() + ", " + getNumberOfFloor();
+        return super.toCSV() + ";" + getNumberOfFloor();
     }
 
     public int getNumberOfFloor() {

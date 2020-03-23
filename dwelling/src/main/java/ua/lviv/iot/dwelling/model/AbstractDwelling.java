@@ -28,15 +28,16 @@ public abstract class AbstractDwelling {
     }
 
     public String getHeaders() {
-        return "areaInSquareMeters, priceInUSD, location, SoundInsulationOfWalls, district, allRoomsCount, balconyCount, "
-                + "kitchenCount, restroomCount, floorCount, windowsCount, poolAvability, garageAvability";
+        return "areaInSquareMeters;priceInUSD;location;SoundInsulationOfWalls;district;allRoomsCount;balconyCount;"
+                + "kitchenCount;restroomCount;floorCount;windowsCount;poolAvability;garageAvability;numberOfFloor;"
+                + "neighboringApartmentsOnFloorCount;areaOfLandInSquareMeters;entranceDoorCount;otherBuildingsInArea";
     }
 
     public String toCSV() {
-        return getAreaInSquareMeters() + ", " + getPriceInUSD() + ", \"" + location.getXInDecimalDegrees() + ", "
-                + location.getYInDecimalDegrees() + "\", " + getSoundInsulationOfWalls() + ", " + getDistrict() + ", "
-                + getAllRoomsCount() + ", " + getBalconyCount() + ", " + getKitchenCount() + ", " + getRestroomCount()
-                + ", " + getFloorCount() + ", " + getWindowsCount() + ", " + isPoolAvability() + ", "
+        return getAreaInSquareMeters() + ";" + getPriceInUSD() + ";" + location.getXInDecimalDegrees() + ", "
+                + location.getYInDecimalDegrees() + ";" + getSoundInsulationOfWalls() + ";" + getDistrict() + ";"
+                + getAllRoomsCount() + ";" + getBalconyCount() + ";" + getKitchenCount() + ";" + getRestroomCount()
+                + ";" + getFloorCount() + ";" + getWindowsCount() + ";" + isPoolAvability() + ";"
                 + isGarageAvability();
     }
 
